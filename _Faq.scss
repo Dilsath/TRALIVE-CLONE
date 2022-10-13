@@ -1,0 +1,39 @@
+@import "./theme";
+%Faq {
+  .faq {
+    > .title1 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem auto;
+    }
+    > .title2 {
+      text-align: center;
+      font-size: 4rem;
+      margin: 1rem auto;
+      color: $primary
+    }
+    .container {
+      @include Flex(center, center);
+      gap: 20rem;
+      margin: 10rem auto;
+
+      .col1 {
+        font-size: 2.5rem;
+
+        .title {
+          margin: 3rem auto;
+        }
+      }
+    }
+    .btn {
+      @include Flex(center, center);
+      padding: 1rem 2rem;
+      max-width: 25rem;
+      font-size: 1.5rem;
+      font-weight: 15rem;
+      background-color: $secondary;
+      margin: auto;
+      color: aliceblue;
+    }
+  }
+}

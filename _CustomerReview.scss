@@ -1,0 +1,51 @@
+@import "./theme";
+
+%CustomerReview {
+  .customer-review {
+    @include Flex(start, center, column, nowrap);
+    color: aliceblue;
+    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/gallery/section_bg1.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0px;
+    margin: 10rem 0rem;
+    .container {
+      max-width: 90rem;
+      .title1 {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 3rem;
+        margin: 3rem;
+      }
+      .title2 {
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 4rem;
+        font-weight: 6rem;
+        margin: 1rem;
+      }
+      .row {
+        @include Flex(center, center);
+        gap: 3rem;
+        padding: 1rem;
+        margin: 2rem auto;
+
+        .img {
+          padding: 10rem;
+        }
+        .col {
+          p.title1 {
+            margin: 1rem 0px;
+            font-size: 1.5rem;
+            font-weight: 5rem;
+          }
+          p.title2 {
+            margin: 1rem 0px;
+            font-size: 2rem;
+            font-weight: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

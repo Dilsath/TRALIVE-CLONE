@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "./mixins";
+@import "./Navbar";
+@import "./CoverImage";
+@import "./UpcomingEvents";
+@import "./Aboutus";
+@import "./CustomerReview";
+@import "./Faq";
+@import "./VideoBlog";
+@import "./Footer";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  @include breakpoint(1000px) {
+    font-size: 7px;
+  }
+}
+
+.container {
+  max-width: 1800px;
+  width: 90%;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+body {
+  @extend %Navbar;
+  @extend %CoverImage;
+  @extend %UpcomingEvents;
+  @extend %Aboutus;
+  @extend %CustomerReview;
+  @extend %Faq;
+  @extend %VideoBlog;
+  @extend %Footer;
+}

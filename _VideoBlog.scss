@@ -1,0 +1,12 @@
+%VideoBlog {
+  .video-blog {
+    margin: 20rem auto;
+    .container {
+      @include Flex(center, center);
+      video {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+}

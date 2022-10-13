@@ -1,0 +1,60 @@
+@import "./theme";
+
+%Navbar {
+  .navbar {
+    position: sticky;
+    top: 0%;
+    padding: 0rem 0.5rem;
+    background-color: #ffffff;
+    font-size: 2rem;
+    z-index: 99;
+
+    .container {
+      @include Flex(space-between, center, row, nowrap);
+      height: 8rem;
+      .routes {
+        span {
+          margin: 0px 1.5rem;
+          font-size: 1.6rem;
+          color: $primary;
+          font-weight: 500;
+          @include breakpoint(9
+          00px){
+           display: none;
+          }  
+        }
+        .btn {
+          padding: 1.4rem;
+          background-color: $secondary;
+          color: #ffffff;
+          border-radius: 5px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+ 
+  .menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+    margin: auto;
+    height: 7rem;
+    width: 90%;
+    background-color: black;
+   visibility: hidden;
+    >.black{
+      padding: 1rem;
+      padding-right: 5rem;
+      color: white;
+      background-color:rebeccapurple;
+      margin-right: 2rem;
+      font-size: 2rem;
+      
+    }
+    @include breakpoint(900px){
+      visibility: visible;
+    }
+  }
+}
+

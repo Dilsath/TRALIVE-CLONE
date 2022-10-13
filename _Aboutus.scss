@@ -1,0 +1,42 @@
+%Aboutus{
+.aboutus{
+    padding-top: 10rem;
+    .container{
+        .row-wrapper{
+            display: flex;
+           justify-content: center;
+           gap: 10rem;
+
+            .col{
+                max-width: 48rem;
+                .title1{
+                    font-size: 1.5rem;
+                    margin-bottom: 2.5rem;
+                }
+                .title2{
+                    font-size: 4.5rem;
+                    margin-bottom: 2.5rem;
+                    color: $primary;
+                }
+                .title3{
+                    font-size: 1.6rem;
+                    margin-bottom: 3rem;
+                    line-height: 3.5rem;
+                }
+
+                .btn{
+                    float: left;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding: 2rem 3rem;
+                    background-color: $secondary;
+                    color: aliceblue;
+                }
+            }
+
+
+
+        }
+    }
+}
+}

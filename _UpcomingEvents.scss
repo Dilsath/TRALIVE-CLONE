@@ -1,0 +1,50 @@
+%UpcomingEvents {
+  .upcoming-events {
+    padding-top: 8rem;
+    height: auto;
+    .container {
+      .title1 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0rem auto;
+      }
+      .title2 {
+        text-align: center;
+        font-size: 4rem;
+        color: $primary;
+        margin: 1.5rem auto;
+      }
+      .row-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin: 10rem auto;
+
+        .card {  
+          display: flex;   
+          flex-direction: column;   
+          .row {
+            padding: 1rem;            
+            span {
+              padding: 1rem;
+              margin: 2rem 0;
+              font-size: 2rem;
+            }
+          }
+          @include breakpoint(960px){
+            &:nth-child(2){
+              display: none;
+            }
+          }
+          @include breakpoint(500px){
+            &:nth-child(1){             
+              display: none;
+             
+            }
+          }     
+             
+        }
+      }
+    }
+  }
+}
